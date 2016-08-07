@@ -1,0 +1,374 @@
+html,body{
+    width:100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    background: url("image/bg.jpg") center center fixed;
+    background-size: cover;
+}
+
+
+/*--------------------------------------------------------*/
+
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    background: linear-gradient(75deg, rgba(140,140,140,0.85) 36vw, rgba(0,0,0, 0.70) 40vw);
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+
+#overlay-complete {
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    background: rgba(0,0,0, 0.70);
+    position: absolute;
+    animation-fill-mode: forwards;
+}
+
+#load-bg{
+    animation: bg-load 7s linear ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+    #welcome-msg{
+        position: fixed;
+        left: 0;
+        float: left;
+        width: 60vw;
+        height: 100%;
+        padding-left: 20vw;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), transparent);
+        display: flex;
+        align-items: center;
+        font-size: 5vw;
+        z-index:5;
+        line-height: 40px;
+        text-align: left;
+        animation: welcome 7s linear;
+        animation-fill-mode: forwards;
+    }
+
+        #welcome-msg h1{
+            color: #333399;
+            opacity: 0;
+            animation: fadeIn ease-in 0.4s;
+            animation-fill-mode: forwards;
+        }
+
+        #welcome-1{
+            font-size: 0.8em;
+            opacity: 0;
+            animation: fadeIn ease-in 0.4s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.6s;
+        }
+        #welcome-2{
+            font-size:0.6em;
+            opacity: 0;
+            animation: fadeIn ease-in 0.4s;
+            animation-fill-mode: forwards;
+            animation-delay: 1.2s;
+        }
+    #inverter{
+        height: 100%;
+        width: 100%;
+        transform: rotateY(180deg);
+        display: flex;
+        align-items: center;
+    }
+
+/*--------------------------------------------------------*/
+
+        .navbar{
+            width: 20vw;
+            height: 100vh;
+            margin: 0 5vw 0 0;
+            padding: 0 2vw;
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+            float: left;
+            opacity: 0;
+            animation: fadeIn ease-in 1s;
+            animation-fill-mode: forwards;
+        }
+        #general-nav{
+            animation-delay: 0;
+        }
+        #index-nav{
+            animation-delay: 7s;
+        }
+
+            #intials{
+                width: 60%;
+                padding: 2%;
+                border-bottom: 1px solid white;
+            }
+
+            .navbar ul{
+                list-style-type: none;
+                margin: 12vh 0;
+                padding: 0;
+            }
+
+                .navbar li{
+                    text-align: center;
+                    font-size:3vw;
+                    padding: 0.5vh;
+                }
+
+                    .navbar li:hover{
+                        color: cornflowerblue;
+                    }
+
+                    .navbar li a{
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                    .navbar li a:active, .navbar li a:visited{
+                        color: inherit;
+                        text-decoration: none;
+                    }
+
+            #social-icons{
+                width: 20vw;
+                height: 4vw;
+                padding: 0;
+                margin: 0;
+            }
+
+                #social-icons img{
+                    width: 3vw;
+                    margin: 0.5vw;
+                    display: inline-block;
+                }
+
+                #social-icons img:hover{
+                    animation: swell 0.3s linear;
+                    animation-fill-mode: forwards;
+                }
+
+/*--------------------------------------------------------*/
+
+        #text{
+            display: inline-block;
+        }
+
+            #heading{
+                margin-left:2vw;
+                opacity: 0;
+                animation: fadeIn ease-in 1s;
+                animation-delay: 7.4s;
+                animation-fill-mode: forwards;
+            }
+
+            #heading-general{
+                margin-left:2vw;
+                opacity: 0;
+                animation: fadeIn ease-in 1s;
+                animation-delay: 0.4s;
+                animation-fill-mode: forwards;
+            }
+
+                #heading h1, #heading-general h1{
+                    font-size: 5vw;
+                    color: #69a3ff;
+                    margin: 0 auto;
+                }
+
+                .dot1{
+                    font-size: 8vw;
+                }
+
+            .small-text{
+                line-height: 2.5vw;
+                color: white;
+                margin-left: 2vw;
+                width:30vw;
+            }
+
+            #wide-para{
+                width: 60vw;
+            }
+
+                .small-text p{
+                    font-size: 1.2vw;
+                    letter-spacing: 0.05vw;
+                    margin: 15vh 0 10vh;
+                    opacity: 0;
+                    animation: fadeIn ease-in 1s;
+                    animation-delay: 7.7s;
+                    animation-fill-mode: forwards;
+
+                }
+
+                .small-text #fade-p{
+                    font-size: 1.2vw;
+                    letter-spacing: 0.05vw;
+                    margin: 8vh 0 5vh;
+                    opacity: 0;
+                    animation: fadeIn ease-in 1s;
+                    animation-delay: 0.7s;
+                    animation-fill-mode: forwards;
+
+                }
+
+                .small-text #fade-contact{
+                    font-size: 2.5vw;
+                    line-height: 4vw;
+                    letter-spacing: 0.05vw;
+                    margin: 8vh 0 5vh;
+                    opacity: 0;
+                    animation: fadeIn ease-in 1s;
+                    animation-delay: 0.7s;
+                    animation-fill-mode: forwards;
+
+                }
+
+                .small-text h1{
+                    font-size: 2.5vw;
+                    letter-spacing: 0.05vw;
+                    opacity: 0;
+                    animation: fadeIn ease-in 1s;
+                    animation-delay: 8s;
+                    animation-fill-mode: forwards;
+                }
+                .large{
+                    font-size: 1.4vw;
+                    font-weight: bold;
+                }
+
+/*--------------------------------------------------------*/
+
+        #svg-img{
+            zoom: 1.6;
+            position: absolute;
+            float: right;
+            right: 0;
+            height: 100%;
+            align-items: center;
+            color: white;
+            display: inline-flex;
+            animation: svg-shift 7s linear;
+            animation-fill-mode: forwards;
+        }
+
+
+            svg {
+                height: 45vh;
+                width: 20vw;
+            }
+
+            #path-0 {
+                stroke-dashoffset:2200;
+                stroke-dasharray:2200;
+                animation: draw-m 5s linear;
+                animation-fill-mode: forwards;
+                fill-opacity: 0;
+                animation-delay: 2s;
+            }
+
+            .path {
+                stroke-dashoffset:2000;
+                stroke-dasharray:2000;
+                animation: draw 5s linear;
+                animation-fill-mode: forwards;
+                fill-opacity: 0;
+                animation-delay: 2s;
+            }
+
+            #path-1 {
+                stroke-dashoffset:50000;
+                stroke-dasharray:50000;
+                animation: draw-l 5s linear;
+                animation-fill-mode: forwards;
+                fill-opacity: 0;
+                animation-delay: 2s;
+            }
+
+/*--------------------------------------------------------*/
+
+
+
+
+/*-----------------------Animation---------------------*/
+
+@keyframes draw-l {
+    0%{stroke-dashoffset:60000; fill-opacity: 0;}
+    70%{stroke-dashoffset:0; fill-opacity: 0;}
+    70%{stroke-dashoffset:0; fill-opacity: 0; stroke-width: 4;}
+    100%{stroke-dashoffset:0; fill-opacity: 1; stroke-width: 0;}
+}
+
+@keyframes draw-m {
+    0%{stroke-dashoffset:2200; fill-opacity: 0;}
+    30%{stroke-dashoffset:2200; fill-opacity: 0;}
+    50%{stroke-dashoffset:0; fill-opacity: 0;}
+    70%{stroke-dashoffset:0; fill-opacity: 0; stroke-width: 4;}
+    100%{stroke-dashoffset:0; fill-opacity: 1; stroke-width: 0;}
+}
+
+@keyframes draw {
+    0%{stroke-dashoffset:2000; fill-opacity: 0;}
+    50%{stroke-dashoffset:2000; fill-opacity: 0;}
+    70%{stroke-dashoffset:0; fill-opacity: 0; stroke-width: 4;}
+    100%{stroke-dashoffset:0; fill-opacity: 1; stroke-width: 0;}
+}
+
+@keyframes swell {
+    0%{width: 3vw; margin: 0.5vw;}
+    100%{width: 3.5vw; margin: 0.25vw;}
+}
+
+/*--------------------------------------------------------*/
+
+/*---------------------Load Animation-------------------------*/
+
+@keyframes bg-load {
+    0%{
+        background: rgba(200,200,200,1);
+    }
+    86%{
+        background: rgba(200,200,200,1);
+    }
+    100%{
+        background: rgba(140,140,140,0);
+    }
+}
+
+@keyframes welcome {
+    0%{
+        opacity:1;
+    }
+    86%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+        z-index: 5;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+        z-index: -1;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity:0; }
+    to { opacity:1;}
+}
+
+
+/*--------------------------------------------------------*/
